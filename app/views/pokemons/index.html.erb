@@ -1,0 +1,10 @@
+
+<div class="container">
+  <h1>Show all pokemon</h1>
+
+  <ul>
+  <% @pokemons.each do |pokemon| %>
+  <li><%= link_to pokemon.name, pokemon_path(pokemon) %> - <%= pokemon.found_days_ago %> Days Ago</li>
+  <% end %>
+  </ul>
+</div>
